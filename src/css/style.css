@@ -1,12 +1,15 @@
 /**/@import 'tailwindcss/base';
 
+
 /**/@import 'tailwindcss/components';
 
 
 
 /**/@import 'tailwindcss/utilities';
 
-
 body{
-    @apply bg-blue-500 text-lg;
+    @apply bg-nezegamer-gray-dark text-white;
+}
+.main{
+    @apply flex flex-col gap-4;
 }
