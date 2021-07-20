@@ -1,0 +1,21 @@
+.widget_social{
+
+    .message{
+        @apply text-4xl font-bold;
+    }
+        .social{
+            @apply inline-flex;
+                &__item{
+                    @apply transition duration-300 p-1;
+                        &:hover{
+                            @apply border border-nezegamer-red rounded-md;
+                        }
+                }
+                &__item > a > img{
+                    @apply transition duration-300 transform;
+                        &:hover{
+                            @apply rotate-90;
+                        }
+                }
+        }
+}

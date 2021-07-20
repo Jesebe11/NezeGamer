@@ -1,0 +1,3 @@
+.identity{
+    @apply flex gap-4 bg-nezegamer-gray-light p-4 items-center justify-around w-full;
+}

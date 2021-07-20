@@ -48,27 +48,22 @@ class Social extends WP_Widget {
         <ul class="social">
             <li class="social__item">
                 <a href="#" target="_blank">
-                    <img src="https://i.postimg.cc/FHRFh4WV/facebook-logo.png" alt="Facebook">
+                    <img src="https://i.postimg.cc/MKHwjJB3/facebook-logo.png" alt="Facebook">
                 </a>
             </li>
             <li class="social__item">
                 <a href="#" target="_blank">
-                    <img src="https://i.postimg.cc/q7FH8nvY/twitter.png" alt="Twitter">
+                    <img src="https://i.postimg.cc/25RNJqKg/twitter.png" alt="Twitter">
                 </a>
             </li>
             <li class="social__item">
                 <a href="#" target="_blank">
-                    <img src="https://i.postimg.cc/26qByW0T/instagram.png" alt="Instagram">
+                    <img src="https://i.postimg.cc/J4FLNYcr/instagram.png" alt="Instagram">
                 </a>
             </li>
             <li class="social__item">
                 <a href="#" target="_blank">
-                    <img src="https://i.postimg.cc/Z5VS5XtJ/linkedin.png" alt="LinkedIn">
-                </a>
-            </li>
-            <li class="social__item">
-                <a href="#" target="_blank">
-                    <img src="https://i.postimg.cc/QMCr9Sh1/whatsapp.png" alt="Whatsapp">
+                    <img src="https://i.postimg.cc/bw2j303Q/youtube.png" alt="Youtube">
                 </a>
             </li>
         </ul>
