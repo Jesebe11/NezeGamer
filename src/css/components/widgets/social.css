@@ -4,9 +4,9 @@
         @apply text-4xl font-bold;
     }
         .social{
-            @apply inline-flex gap-4;
+            @apply inline-flex gap-2;
                 &__item{
-                    @apply transition duration-300 bg-nezegamer-gray rounded-full p-1;
+                    @apply transition duration-300 flex items-center justify-center rounded-full p-1;
                         &:hover{
                             @apply bg-transparent border border-nezegamer-white-single rounded-md;
                         }

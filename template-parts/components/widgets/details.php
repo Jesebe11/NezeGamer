@@ -24,6 +24,7 @@ class Top_Head extends WP_Widget {
         ?>
 
             <p class="top-head__details top-head__details--number">+58 416-302-21-30</p>
+            <hr class="separador">
             <p class="top-head__details top-head__details--email">nezegamer@gmail.com</p>
 
 
