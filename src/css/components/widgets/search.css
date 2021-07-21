@@ -3,6 +3,7 @@
 }
 @screen lg{
     .widget_search{
+        @apply block;
         form{
             .wp-block-search__inside-wrapper{
                 border: 2px solid #df163b !important;

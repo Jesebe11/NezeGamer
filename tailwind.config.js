@@ -13,6 +13,7 @@ module.exports = {
           'nezegamer-white-comple' : '#f8f9fa',
           'nezegamer-gray' : '#6c757d' ,
           'nezegamer-gray-light' : '#292e38' ,
+          'nezegamer-gray-medium' : '#2f3541' ,
           'nezegamer-gray-dark' : '#181c23',
 
           //labels or flags
