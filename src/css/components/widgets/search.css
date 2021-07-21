@@ -1,11 +1,10 @@
 .widget_search{
     form{
         .wp-block-search__inside-wrapper{
-            border: 2px solid #fff !important;
+            border: 2px solid #df163b !important;
                 input{
-                    @apply bg-transparent outline-none px-2;
+                    @apply bg-transparent outline-none rounded-3xl px-2;
                     border:none !important;
-                    border-radius: 1.5rem !important;
                 }
         }
     }

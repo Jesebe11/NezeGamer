@@ -4,7 +4,7 @@
     ?>
 </div>
 
-<div class="identity">
+<div class="branding">
     <?php
         get_template_part( 'template-parts/components/common/header/site-branding' );
         get_template_part( 'template-parts/components/common/header/primary-menu' );

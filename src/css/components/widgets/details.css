@@ -4,7 +4,7 @@
         @apply flex justify-center gap-2 items-center transition duration-300 text-sm;
             &--number{
                 &:before{
-                    content: url('https://i.postimg.cc/DybWKkpX/call.png');
+                    content: url('https://i.postimg.cc/xCNcr5H9/call-1.png');
                 }
                 &:after{
                     content: "\007C";
@@ -12,7 +12,7 @@
             }
             &--email{
                 &:before{
-                    content: url('https://i.postimg.cc/Mp2n6Pgr/email.png');
+                    content: url('https://i.postimg.cc/Vvy5ztBn/email-1.png');
                 }
             }
             &:hover{
