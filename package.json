@@ -18,11 +18,11 @@
     "postcss-cli": "^7.1.1",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.3",
-    "tailwindcss": "^1.7.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.6",
     "tailwindcss-scroll-snap": "^1.0.3",
     "ts-loader": "^8.1.0",
     "typescript": "^4.2.3",
-    "watch": "^1.0.2"
+    "watch": "^0.13.0"
   },
   "scripts": {
     "compress": "dir-archiver --src . --dest ../_telesur.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map webpack.config.js postcss.config.js tailwind.config.js src",
@@ -38,5 +38,8 @@
     "watch-css": "cross-env NODE_ENV=development postcss src/css/style.css -o dist/css/style.css --watch",
     "watch": "npm run watch-css & npm run watch-js",
     "make-pot": "wp i18n make-pot . languages/bellner-tools.pot"
+  },
+  "dependencies": {
+    "postcss": "^7.0.36"
   }
 }
