@@ -1,4 +1,4 @@
-	<div class="identity">
+	<div class="identity identity--footer">
 		<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :

@@ -1,0 +1,11 @@
+.copy{
+    @apply flex gap-4;
+        .copyright{
+            @apply w-1/3;
+        }
+}
+.identity{
+    &--footer{
+        @apply w-2/3;
+    }
+}
