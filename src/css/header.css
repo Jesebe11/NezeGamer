@@ -2,4 +2,5 @@
 @import './components/common/header/branding.css';
 @import './components/common/header/identity.css';
 @import './components/common/header/top-head.css';
-@import './components/common/header/navigation.css'
+@import './components/common/header/navigation.css';
+@import './components/common/header/hamburger/hamburger.css';
