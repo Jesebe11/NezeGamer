@@ -1,13 +1,13 @@
 .menu-primary-container{
     .menu{
-        @apply inline-flex overflow-x-visible w-auto h-auto;
+        @apply inline-flex overflow-x-visible w-auto h-auto gap-4;
         .menu-item-has-children{
             &:after{
                 content: ' ▾ ';
             }
         }
         .menu-item {
-            @apply inline-block items-center p-2 border-none text-nezegamer-white-single bg-nezegamer-red text-lg;
+            @apply inline-block items-center p-2 border-none text-nezegamer-white-single bg-transparent font-bold text-lg;
             column-gap: .3rem;
 
             a {

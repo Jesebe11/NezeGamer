@@ -1,13 +1,10 @@
 .widget_details{
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-4 py-2;
     .top-head__details{
         @apply flex justify-center gap-2 items-center transition duration-300 text-sm;
             &--number{
                 &:before{
                     content: url('https://i.postimg.cc/xCNcr5H9/call-1.png');
-                }
-                &:after{
-                    content: "\007C";
                 }
             }
             &--email{
@@ -23,5 +20,12 @@
 @screen lg{
     .widget_details{
         @apply flex-row gap-2;
+        .top-head__details{
+                &--number{
+                    &:after{
+                        content: "\007C";
+                    }
+                }
     }
+}
 }
