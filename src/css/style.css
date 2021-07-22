@@ -10,7 +10,7 @@
 /**/@import 'tailwindcss/utilities';
 
 body{
-    @apply bg-nezegamer-gray-light text-white;
+    @apply bg-nezegamer-gray-dark text-white;
 }
 .main{
     @apply flex flex-col gap-4;

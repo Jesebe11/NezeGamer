@@ -9,6 +9,11 @@
                             @apply text-nezegamer-white-single;
                         }
                     }
+                    &:last-child{
+                        &:after{
+                            content: '♥';
+                        }
+                    }
                 }
         }
 }
