@@ -1,5 +1,4 @@
 .widget_social{
-    @apply flex flex-col items-center;
     .message{
         @apply text-4xl font-bold;
     }
