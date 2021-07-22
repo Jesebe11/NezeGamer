@@ -9,12 +9,6 @@
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-/* .pciwgas-pdt-cat-grid  {
-    @apply opacity-90 animate-pulse transform;
-    &:hover{
-        @apply animate-none opacity-100;
-    }
-} */
 .pciwgas-cat-img{
     @apply transform -rotate-45 opacity-50;
         &:hover{
@@ -22,5 +16,11 @@
         }
 }
 .pciwgas-cat-wrap{
-    @apply py-4;
+    @apply py-4 inline-flex flex-col;
+}
+@screen lg{
+
+    .pciwgas-cat-wrap{
+        @apply py-4 block;
+    }
 }

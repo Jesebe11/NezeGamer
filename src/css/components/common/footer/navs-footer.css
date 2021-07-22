@@ -1,19 +1,41 @@
 .navs-footer{
-    @apply border-nezegamer-gray-light w-full flex justify-around py-4 items-center bg-nezegamer-gray-medium gap-8;
+    @apply border-nezegamer-gray-light w-full flex flex-col justify-evenly py-4 items-center bg-nezegamer-gray-opacity gap-8;
         .widget_nav_menu{
-            @apply flex flex-col gap-4;
+            @apply flex flex-col gap-8;
             .widget-title{
-                @apply text-4xl font-bold text-nezegamer-red;
+                @apply text-xl font-bold text-nezegamer-red underline;
             }
             .menu-menu-footer-1-container{
-                @apply pl-2 flex flex-col gap-2 text-xl;
+                @apply pl-2 flex flex-col gap-2 text-base px-4 border-r border-l border-nezegamer-gray;
                     .menu{
                         .menu-item{
                             &:hover{
                                 @apply text-nezegamer-red;
                             }
+                            &:before{
+                                content: ' - ';
+                            }
                         }
                     }
             }
         }
+    .up{
+        @apply p-4 flex items-center justify-center rounded-full bg-nezegamer-gray-light transition duration-300;
+            &:hover{
+                @apply animate-bounce;
+            }
+    }
+}
+@screen lg{
+    .navs-footer{
+        @apply flex-row;
+        .widget_nav_menu{
+            .widget-title{
+                @apply text-6xl;
+            }
+            .menu-menu-footer-1-container{
+                @apply text-lg;
+            }
+        }
+    }
 }

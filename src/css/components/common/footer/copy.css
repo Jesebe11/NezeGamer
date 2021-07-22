@@ -1,7 +1,7 @@
 .copy{
-    @apply w-11/12 flex gap-4 justify-center items-center p-4 text-base;
+    @apply w-full flex flex-col gap-4 justify-center items-center p-4 text-base bg-nezegamer-gray-dark border-t-4 border-b-4 border-nezegamer-gray-light;
         .info{
-            @apply w-1/3 border-l-4 border-nezegamer-white-single p-4 font-bold flex flex-col gap-2 items-center;
+            @apply w-full border-l-4 border-nezegamer-white-single p-4 font-bold flex flex-col gap-2 items-center;
                 .copyright{
                     a{
                         @apply transition duration-500 text-nezegamer-red;
@@ -17,4 +17,12 @@
                     }
                 }
         }
+}
+@screen lg{
+    .copy{
+        @apply flex-row;
+            .info{
+                @apply w-1/3;
+            }
+    }
 }
