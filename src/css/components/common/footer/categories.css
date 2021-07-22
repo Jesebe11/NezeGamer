@@ -1,0 +1,26 @@
+.pciwgas-post-cat-inner{
+    @apply bg-nezegamer-gray-opacity rounded-lg flex flex-col items-center border-4 border-nezegamer-red border-opacity-100;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 50px !important;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* .pciwgas-pdt-cat-grid  {
+    @apply opacity-90 animate-pulse transform;
+    &:hover{
+        @apply animate-none opacity-100;
+    }
+} */
+.pciwgas-cat-img{
+    @apply transform -rotate-45 opacity-50;
+        &:hover{
+            @apply opacity-100;
+        }
+}
+.pciwgas-cat-wrap{
+    @apply py-4;
+}

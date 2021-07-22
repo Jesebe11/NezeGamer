@@ -8,7 +8,9 @@
 @import './widgets.css';
 
 /**/@import 'tailwindcss/utilities';
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     @apply bg-nezegamer-gray-dark text-white;
 }

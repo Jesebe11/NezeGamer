@@ -20,7 +20,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> id="top">
+<body <?php body_class(); ?>  id="top">
 	<?php wp_body_open(); ?>
 
 <div id="page" class="site">
