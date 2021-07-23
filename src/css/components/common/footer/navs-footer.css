@@ -21,7 +21,8 @@
         }
     .up{
         @apply p-4 flex items-center justify-center rounded-full bg-nezegamer-gray-light transition duration-300;
-            &:hover{
+        box-shadow: 4px 4px 20px 0px #FFF;
+        &:hover{
                 @apply animate-bounce;
             }
     }
