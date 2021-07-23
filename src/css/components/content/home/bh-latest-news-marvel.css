@@ -1,0 +1,99 @@
+.block-general__products{
+    @apply flex flex-wrap gap-8 justify-center;
+}
+.content {
+@apply relative overflow-hidden w-full transition duration-500 flex flex-col items-center;
+    &__info{
+        @apply w-full h-full flex flex-col justify-center items-center p-2;
+        .content-title{
+            @apply text-2xl italic text-nezegamer-white-single;
+            &--recent{
+                @apply text-lg font-normal text-nezegamer-red;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                overflow: hidden;
+            }
+        }
+        .tags{
+            @apply text-sm italic px-4 py-2 text-nezegamer-red text-opacity-50;
+                &:before{
+                    content: " ~ ";
+                }
+        }
+    }
+    box-shadow: 1px 1px 25px -8px #fff;
+    &:hover{
+        @apply shadow-none;
+    }
+}
+
+.content .content-overlay {
+    background: rgba(0,0,0,0.6);
+    @apply absolute w-full left-0 top-0 bottom-0 right-0 opacity-100;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+    @apply opacity-100;
+}
+
+
+
+.content-details {
+    @apply absolute text-center px-4 w-full opacity-100;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    @apply opacity-100;
+}
+
+.content-text{
+@apply text-nezegamer-white-single flex flex-col items-center;
+.excerpt{
+    @apply justify-center w-full;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}
+a{
+    @apply transform transition duration-500 py-4;
+    width: 32px;
+        &:hover{
+            @apply rotate-180;
+        }
+}
+}
+
+
+
+@screen lg{
+.content {
+        width: 30%;
+}
+.content-details {
+    @apply opacity-0;
+}
+.content .content-overlay {
+    background: rgba(0,0,0,0.8);
+    @apply opacity-0;
+}
+.fadeIn-bottom{
+    top: 80%;
+}
+}
