@@ -1,0 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    @apply bg-nezegamer-gray-dark text-white;
+}
+.main{
+    @apply flex flex-col gap-4 w-full justify-center items-center;
+}
+.block-section{
+    @apply w-full;
+}
+
+@screen lg{
+    .block-section{
+        @apply w-2/3;
+    }
+}

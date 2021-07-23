@@ -3,17 +3,9 @@
 
 /**/@import 'tailwindcss/components';
 
+@import './primmary.css';
 @import './header.css';
 @import './footer.css';
 @import './widgets.css';
 
 /**/@import 'tailwindcss/utilities';
-html{
-    scroll-behavior: smooth;
-}
-body{
-    @apply bg-nezegamer-gray-dark text-white;
-}
-.main{
-    @apply flex flex-col gap-4;
-}
