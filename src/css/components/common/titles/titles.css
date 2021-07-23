@@ -1,5 +1,5 @@
 .title-section{
-    @apply flex my-4 text-nezegamer-white-comple font-bold text-4xl;
+    @apply flex my-4 text-nezegamer-white-comple font-bold text-4xl w-full;
         &:before , &:after{
             content: "";
             display: block;

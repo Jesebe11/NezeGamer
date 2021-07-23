@@ -5,10 +5,10 @@ body{
     @apply bg-nezegamer-gray-dark text-white;
 }
 .main{
-    @apply flex flex-col gap-4 w-full justify-center items-center;
+    @apply w-full flex flex-col justify-center items-center;
 }
 .block-section{
-    @apply w-full;
+    @apply w-full flex flex-col gap-4 justify-center items-center p-2;
 }
 
 @screen lg{

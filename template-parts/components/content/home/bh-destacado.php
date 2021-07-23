@@ -56,9 +56,9 @@ if( $the_query->have_posts() ) :
 endif;
 ?>
 
-<div class="dest">
+<section class="dest">
 
-    <div class="dest__card dest__card--screen-lg">
+    <article class="dest__card dest__card--screen-lg">
 
 
         <a href="<?= $first_permalink ?>">
@@ -80,12 +80,12 @@ endif;
             <p class="dest__card__description dest__card__description--screen-lg"><?= $first_excerpt; ?></p>
         </div>
 
-    </div>
+    </article>
 
     <div class="dest__card">
 
 
-            <div class="dest__card__image">
+            <article class="dest__card__image">
                 <ul class="dest__card__tags tags">
                     <?php
                     if ( ! empty( $second_categories ) ) {
@@ -102,12 +102,12 @@ endif;
                     <h2 class="dest__card__title"><a class="dest__card__title__link" href="<?= $second_permalink ?>" rel="bookmark"><?= $second_title; ?></a></h2>
                 </a>
 
-            <p class="dest__card__description"><?= $second_excerpt; ?></p>
-        </div>
-        </div>
+                <p class="dest__card__description"><?= $second_excerpt; ?></p>
+            </div>
+        </article>
 
 
-            <div class="dest__card__image">
+            <article class="dest__card__image">
                 <ul class="dest__card__tags">
                     <?php
                     if ( ! empty( $third_categories ) ) {
@@ -116,17 +116,15 @@ endif;
                     ?>
                 </ul>
                 <?= $third_post_thumbnail; ?>
+                <div class="dest__card__content">
 
-
-        <div class="dest__card__content">
-
-            <a href="<?= $third_permalink ?>">
-            <h2 class="dest__card__title"><a class="dest__card__title__link" href="<?= $third_permalink ?>" rel="bookmark"><?= $third_title; ?></a></h2>
-            </a>
-            <p class="dest__card__description"><?= $third_excerpt; ?></p>
-        </div>
-            </div>
+                    <a href="<?= $third_permalink ?>">
+                    <h2 class="dest__card__title"><a class="dest__card__title__link" href="<?= $third_permalink ?>" rel="bookmark"><?= $third_title; ?></a></h2>
+                    </a>
+                    <p class="dest__card__description"><?= $third_excerpt; ?></p>
+                </div>
+            </article>
 
     </div>
 
-</div>
+</section>

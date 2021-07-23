@@ -5,25 +5,24 @@ $args = [
     'post_status' => 'publish',
     'orderby' => 'date',
     'order' => 'DESC',
-    'posts_per_page' => 6,
+    'posts_per_page' => 4,
     'category_name' => 'marvel'
 ];
 
 $the_query = new WP_Query( $args);
 
 ?>
-<section class="block-general__products">
+<section class="news">
         <?php if( $the_query->have_posts() ) : ?>
             <?php while( $the_query->have_posts() ) :
                 $the_query->the_post();
                 $title = get_the_title();
                 $author = get_the_author();
             ?>
-                <div class="content">
+                <article class="content">
                     <div class="content-overlay"></div>
                     <?= get_the_post_thumbnail( $post->ID, 'medium', array('class' => 'content-image') ); ?>
                         <div class="content__info">
-                            <h2 class="content-title"><?= $title; ?></h2>
                             <ul class="meta">
                                 <li class="meta__item"> <?= $author; ?> </li>
                                 <li class="meta__item"> <?php echo get_comments_number($post->ID); ?> </li>
@@ -36,6 +35,7 @@ $the_query = new WP_Query( $args);
                                     ?>
                                 </li>
                             </ul>
+                            <h2 class="content-title"><?= $title; ?></h2>
                         </div>
                         <div class="content-details fadeIn-bottom">
                             <div class="content-text">
@@ -45,7 +45,7 @@ $the_query = new WP_Query( $args);
                                 </a>
                             </div>
                         </div>
-                </div>
+                </article>
 
 
 <?php endwhile;
