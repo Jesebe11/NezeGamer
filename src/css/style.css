@@ -3,7 +3,7 @@
 
 /**/@import 'tailwindcss/components';
 
-@import './primmary.css';
+@import './layout.css';
 @import './header.css';
 @import './footer.css';
 @import './home.css';
