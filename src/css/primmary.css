@@ -11,6 +11,7 @@ body{
     @apply w-full;
 }
 
+
 @screen lg{
     .block-section{
         @apply w-2/3;

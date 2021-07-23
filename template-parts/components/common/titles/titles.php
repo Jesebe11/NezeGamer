@@ -1,4 +1,4 @@
-<h3 class="titles-section">
+<div class="title-section">
         <?php if( is_home() ) :  ?>
         <?= $args['title']; ?>
                 <?php elseif(is_archive ()) : ?>
@@ -9,4 +9,4 @@
                 <?php else : ?>
                         <?php the_title(); ?>
         <?php endif; ?>
-</h3>
+</div>
