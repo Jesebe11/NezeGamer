@@ -1,44 +1,38 @@
-.warpper{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .tab{
-    cursor: pointer;
-    padding:10px 20px;
-    margin:0px 2px;
-    background:#000;
-    display:inline-block;
-    color:#fff;
-    border-radius:3px 3px 0px 0px;
-    box-shadow: 0 0.5rem 0.8rem #00000080;
-  }
-  .panels{
-    background:#fffffff6;
-    box-shadow: 0 2rem 2rem #00000080;
-    min-height:200px;
-    width:100%;
-    max-width:500px;
-    border-radius:3px;
-    overflow:hidden;
-    padding:20px;  
-  }
-  .panel{
-    display:none;
-    animation: fadein .8s;
-  }
-  @keyframes fadein {
-      from {
-          opacity:0;
-      }
-      to {
-          opacity:1;
-      }
-  }
-  .panel-title{
-    font-size:1.5em;
-    font-weight:bold
-  }
+.tabs-comics{
+    @apply flex flex-col items-end w-full py-2;
+    .panels{
+        @apply w-full bg-nezegamer-gray-light;
+        box-shadow: 0 2rem 2rem #000;
+        min-height:200px;
+        border-radius:3px;
+        overflow:hidden;
+        .panel{
+            display:none;
+            animation: fadein .8s;
+                .content{
+                    @apply grid grid-cols-3 w-full;
+                }
+        }
+    }
+    .tabs{
+        @apply flex;
+        .tab{
+            @apply cursor-pointer bg-nezegamer-red text-nezegamer-gray-dark inline-block;
+                padding:10px 20px;
+                margin:0px 2px;
+                box-shadow: 0 0.5rem 0.8rem #00000080;
+        }
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
   .radio{
     display:none;
   }

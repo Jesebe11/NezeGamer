@@ -4,7 +4,7 @@
         get_template_part( 'template-parts/components/common/titles/titles' , '' , ['title' => '<span>Noticias</span> Marvel' , 'permalink' => '  '] );
         get_template_part( 'template-parts/components/content/home/bh-latest-news-marvel' /** , '' , ['class' => 'marvel' ] */ );
         get_template_part( 'template-parts/components/common/titles/titles' , '' , ['title' => '<span>Reviews</span> Comics' , 'permalink' => '  '] );
-        get_template_part( 'template-parts/components/content/home/bh-comics' /** , '' , ['class' => 'marvel' ] */ );
+        get_template_part( 'template-parts/components/content/home/bh-guias' /** , '' , ['class' => 'marvel' ] */ );
 
     ?>
 </div>
