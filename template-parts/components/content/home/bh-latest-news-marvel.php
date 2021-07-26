@@ -18,24 +18,26 @@ $the_query = new WP_Query( $args);
                 $the_query->the_post();
                 $title = get_the_title();
                 $author = get_the_author();
+                $date = get_the_date();
             ?>
                 <article class="content">
                     <div class="content-overlay"></div>
                     <?= get_the_post_thumbnail( $post->ID, 'medium', array('class' => 'content-image') ); ?>
                         <div class="content__info">
                             <ul class="meta">
-                                <li class="meta__item"> <?= $author; ?> </li>
-                                <li class="meta__item"> <?php echo get_comments_number($post->ID); ?> </li>
-                                <li class="meta__item">
-                                    <?
-                                        $post_tags = get_the_tags();
-                                        if ( $post_tags ) {
-                                        echo $post_tags[1]->name;
-                                    }
-                                    ?>
-                                </li>
+                                <li class="meta__item meta__item--author"> <?= $author; ?> </li>
+                                <li class="meta__item meta__item--date"> <?= $date; ?> </li>
+                                <li class="meta__item meta__item--comments"> <?php echo get_comments_number($post->ID); ?> </li>
                             </ul>
                             <h2 class="content-title"><?= $title; ?></h2>
+                            <p class="tags">
+                                <?
+                                    $post_tags = get_the_tags();
+                                    if ( $post_tags ) {
+                                    echo $post_tags[1]->name;
+                                }
+                                ?>
+                            </p>
                         </div>
                         <div class="content-details fadeIn-bottom">
                             <div class="content-text">
