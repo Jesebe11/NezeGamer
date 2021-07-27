@@ -5,7 +5,7 @@
         get_template_part( 'template-parts/components/content/home/bh-latest-news-marvel' /** , '' , ['class' => 'marvel' ] */ );
         get_template_part( 'template-parts/components/common/titles/titles' , '' , ['title' => '<span>Guias</span> Variadas' , 'permalink' => '  '] );
         get_template_part( 'template-parts/components/content/home/bh-guides' /** , '' , ['class' => 'marvel' ] */ );
-        get_template_part( 'template-parts/components/common/titles/titles' , '' , ['title' => '<span>Nuestros</span> Wallpapers' , 'permalink' => '  '] );
+        get_template_part( 'template-parts/components/common/titles/titles' , '' , ['title' => '<span>Wall</span>papers' , 'permalink' => '  '] );
         get_template_part( 'template-parts/components/content/home/bh-galleries' /** , '' , ['class' => 'marvel' ] */ );
 
     ?>

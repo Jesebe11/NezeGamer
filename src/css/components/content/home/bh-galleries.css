@@ -1,3 +1,21 @@
 .galleries{
-    @apply grid grid-cols-3 gap-4;
+    @apply flex flex-col gap-2 w-full;
+        .content{
+            &--galleries{
+                @apply w-11/12 bg-transparent border-b-4 border-nezegamer-red;
+            }
+        }
+    .zoom-gallery{
+        &--gallery{
+            @apply w-full transform-none flex items-center justify-center opacity-60;
+                &:hover{
+                    @apply scale-110 opacity-100;
+                }
+        }
+    }
+}
+@screen lg{
+    .galleries{
+        @apply grid grid-cols-3 gap-4 w-11/12;
+    }
 }

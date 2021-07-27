@@ -20,23 +20,24 @@ $the_query = new WP_Query( $args);
                 ?>
                 <article class="content content--galleries">
                         <div class="content-overlay"></div>
-                        <?= get_the_post_thumbnail( $post->ID, 'medium', array('class' => 'content-image') ); ?>
+                        <?= get_the_post_thumbnail( $post->ID, 'medium-large', array('class' => 'content-image') ); ?>
                             <div class="content__info">
                                 <h2 class="content-title"><?= $title; ?></h2>
-                                <p class="tags">
+                                <ul class="tags tags--gallery">
                                     <?
-                                        $post_tags = get_the_tags();
-                                        if ( $post_tags ) {
-                                        echo $post_tags[1]->name;
-                                    }
+                                        $posttags = get_the_tags($post->ID , ' , ');
+                                        if ($posttags) {
+                                            foreach($posttags as $tag) {
+                                            echo '<li>'.$tag->name . ' '. '</li>';
+                                            }
+                                        }
                                     ?>
-                                </p>
+                                </ul>
                             </div>
                             <div class="content-details fadeIn-bottom">
                                 <div class="content-text">
-                                <?  echo '<p class="excerpt">' . get_the_excerpt() . '</p>'; ?>
-                                <a href="<?php the_permalink(); ?>">
-                                        <img src="https://i.postimg.cc/5NCrq5nk/eye-1.png" alt="Eye">
+                                <a class="zoom-gallery zoom-gallery--gallery" href="<?php the_permalink(); ?>">
+                                        <img src="https://i.postimg.cc/yxbYLm0B/picture-1.png" alt="Eye">
                                     </a>
                                 </div>
                             </div>

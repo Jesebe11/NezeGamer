@@ -94,7 +94,7 @@
         line-clamp: 3;
         overflow: hidden;
     }
-    a{
+    .zoom-gallery{
         @apply transform transition duration-500 py-4;
         width: 32px;
             &:hover{
