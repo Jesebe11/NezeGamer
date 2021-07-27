@@ -10,17 +10,17 @@
     <div class="panels">
         <div class="panel" id="one-panel">
             <div class="content">
-                <? get_template_part('template-parts/components/content/home/tabs-guias/tab-minecraft'); ?>
+                <? get_template_part('template-parts/components/content/home/tabs-guides/tab-minecraft'); ?>
             </div>
         </div>
         <div class="panel" id="two-panel">
             <div class="content content--variant">
-                <? get_template_part('template-parts/components/content/home/tabs-guias/tab-gta'); ?>
+                <? get_template_part('template-parts/components/content/home/tabs-guides/tab-gta'); ?>
             </div>
         </div>
         <div class="panel" id="three-panel">
             <div class="content">
-                <? get_template_part('template-parts/components/content/home/tabs-guias/tab-cod'); ?>
+                <? get_template_part('template-parts/components/content/home/tabs-guides/tab-cod'); ?>
             </div>
         </div>
     </div>
