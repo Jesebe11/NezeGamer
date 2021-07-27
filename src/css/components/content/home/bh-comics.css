@@ -1,50 +1,86 @@
 .tabs-comics{
     @apply flex flex-col items-end w-full py-2;
     .panels{
-        @apply w-full bg-nezegamer-gray-light;
-        box-shadow: 0 2rem 2rem #000;
-        min-height:200px;
-        border-radius:3px;
-        overflow:hidden;
+        @apply w-full bg-nezegamer-gray-light rounded-md overflow-hidden;
         .panel{
             display:none;
-            animation: fadein .8s;
+            animation: fadein 3s;
                 .content{
-                    @apply grid grid-cols-3 w-full;
+                    @apply flex flex-col w-full gap-2 px-2;
+                    &--variant{
+                        @apply bg-nezegamer-gray;
+                    }
+                        .item{
+                            @apply bg-nezegamer-gray-dark rounded-md shadow-2xl py-4 px-2 border-4 border-dotted border-nezegamer-gray-medium flex flex-col gap-2 text-base justify-center items-center;
+                                &:hover{
+                                    box-shadow: 0 .5rem 3rem #000;
+                                }
+                                &__meta{
+                                    @apply flex text-sm font-bold items-center w-full justify-start gap-2 text-nezegamer-red;
+                                }
+                                &__title{
+                                    @apply w-full;
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                    line-clamp: 2;
+                                    overflow: hidden;
+                                        &:hover{
+                                            @apply text-nezegamer-red;
+                                        }
+                                }
+                        }
                 }
-        }
+            }
+            &:nth-child(odd){
+                @apply bg-nezegamer-gray-opacity;
+            }
     }
     .tabs{
-        @apply flex;
+        @apply flex flex-col w-full;
         .tab{
-            @apply cursor-pointer bg-nezegamer-red text-nezegamer-gray-dark inline-block;
-                padding:10px 20px;
-                margin:0px 2px;
-                box-shadow: 0 0.5rem 0.8rem #00000080;
+            @apply cursor-pointer bg-nezegamer-red text-nezegamer-white-single font-bold inline-block px-6 py-4;
+                box-shadow: 0 0.5rem 0.8rem #2f3541;
         }
     }
 }
 
 @keyframes fadein {
     from {
-        opacity:0;
+        opacity: 0;
     }
     to {
         opacity:1;
     }
 }
-  .radio{
+.radio{
     display:none;
-  }
-  #one:checked ~ .panels #one-panel,
-  #two:checked ~ .panels #two-panel,
-  #three:checked ~ .panels #three-panel{
-    display:block
-  }
-  #one:checked ~ .tabs #one-tab,
-  #two:checked ~ .tabs #two-tab,
-  #three:checked ~ .tabs #three-tab{
-    background:#fffffff6;
-    color:#000;
-    border-top: 3px solid #000;
-  }
+}
+    #one:checked ~ .panels #one-panel,
+    #two:checked ~ .panels #two-panel,
+    #three:checked ~ .panels #three-panel{
+        @apply block;
+    }
+    #one:checked ~ .tabs #one-tab,
+    #two:checked ~ .tabs #two-tab,
+    #three:checked ~ .tabs #three-tab{
+        @apply bg-nezegamer-gray-light text-nezegamer-white-single;
+    }
+
+    @screen lg{
+        .tabs-comics{
+            .panels{
+                .panel{
+                        .content{
+                            @apply grid grid-cols-3 w-full gap-8 px-8;
+                                .item{
+                                    @apply text-xl;
+                                }
+                        }
+                    }
+            }
+            .tabs{
+                @apply flex-row w-1/4;
+            }
+    }
+}

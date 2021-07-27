@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="panel" id="two-panel">
-            <div class="content">
+            <div class="content content--variant">
                 <? get_template_part('template-parts/components/content/home/tabs-guias/tab-gta'); ?>
             </div>
         </div>
