@@ -1,7 +1,7 @@
 .title-section{
     @apply flex my-4 text-nezegamer-white-comple font-bold text-4xl w-full;
         span{
-            @apply text-nezegamer-red pr-2;
+            @apply text-nezegamer-red;
         }
         &:before , &:after{
             content: "";
