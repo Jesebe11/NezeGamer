@@ -1,0 +1,13 @@
+.gameplays{
+    @apply flex flex-col gap-2 w-full justify-center;
+      .widget_block{
+          .aside{
+            @apply grid-cols-2 grid gap-2;
+          }
+      }
+}
+@screen lg{
+  .gameplays{
+    @apply flex-row;
+  }
+}

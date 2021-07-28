@@ -7,6 +7,7 @@
         get_template_part( 'template-parts/components/content/home/bh-guides' /** , '' , ['class' => 'marvel' ] */ );
         get_template_part( 'template-parts/components/common/titles/titles' , '' , ['title' => '<span>Wall</span>papers' , 'permalink' => '  '] );
         get_template_part( 'template-parts/components/content/home/bh-galleries' /** , '' , ['class' => 'marvel' ] */ );
-
+        get_template_part( 'template-parts/components/common/titles/titles' , '' , ['title' => '<span>Game</span>plays' , 'permalink' => '  '] );
+        get_template_part( 'template-parts/components/content/home/bh-gameplays' /** , '' , ['class' => 'marvel' ] */ );
     ?>
 </div>
