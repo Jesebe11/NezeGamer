@@ -1,5 +1,5 @@
 .title-section{
-    @apply flex my-4 text-nezegamer-white-comple font-bold text-4xl w-full;
+    @apply flex my-4 text-nezegamer-white-comple font-bold text-lg w-full;
         span{
             @apply text-nezegamer-red;
         }
@@ -26,4 +26,9 @@
             margin-left: 20px;
         }
 
+}
+@screen lg{
+    .title-section{
+        @apply text-4xl;
+    }
 }

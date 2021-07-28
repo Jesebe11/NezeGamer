@@ -1,0 +1,78 @@
+.matches{
+    @apply flex flex-col gap-2 ;
+}
+.cyberpress-block-matches {
+    @apply  p-4 box-border overflow-auto bg-nezegamer-gray bg-opacity-20 transition duration-300;
+        &:hover{
+            @apply bg-nezegamer-gray-opacity;
+        }
+    height: 400px;
+    max-height: 400px;
+}
+
+
+.cyberpress-block-matches::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.cyberpress-block-matches::-webkit-scrollbar:vertical {
+    width:15px;
+}
+
+.cyberpress-block-matches::-webkit-scrollbar-button:increment,.cyberpress-block-matches::-webkit-scrollbar-button {
+    display: none;
+}
+
+.cyberpress-block-matches::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.cyberpress-block-matches::-webkit-scrollbar-thumb {
+    @apply bg-nezegamer-gray;
+    border-radius: 20px;
+}
+
+.cyberpress-block-matches::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+.cyberpress-block-teams {
+    @apply rounded-md p-4 box-border overflow-auto bg-nezegamer-gray-opacity bg-opacity-40 transition duration-300;
+        &:hover{
+            @apply bg-nezegamer-gray bg-opacity-20;
+        }
+    height: 400px;
+    max-height: 400px;
+}
+
+
+.cyberpress-block-teams::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.cyberpress-block-teams::-webkit-scrollbar:vertical {
+    width:15px;
+}
+
+.cyberpress-block-teams::-webkit-scrollbar-button:increment,.cyberpress-block-teams::-webkit-scrollbar-button {
+    display: none;
+}
+
+.cyberpress-block-teams::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.cyberpress-block-teams::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    /* border: 2px solid #f1f2f3; */
+}
+
+.cyberpress-block-teams::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+@screen lg{
+    .matches{
+        @apply grid grid-cols-2 gap-2 ;
+    }
+}
