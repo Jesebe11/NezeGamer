@@ -3,9 +3,13 @@
     .widget_block{
         .aside{
             @apply flex flex-col gap-4;
+				iframe{
+					max-width: 90%;
+				}
         }
 		.destacado{
 			@apply min-w-full;
+			max-width: 90%;
 		}
     }
 }
