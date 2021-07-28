@@ -1,5 +1,5 @@
 .gameplays{
-    @apply flex flex-col gap-2 w-full bg-nezegamer-gray-light px-4 py-2;
+    @apply flex flex-col gap-2 w-full px-4 py-2;
     .widget_block{
         .aside{
             @apply flex flex-col gap-4;

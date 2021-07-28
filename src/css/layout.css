@@ -8,10 +8,10 @@ body{
     @apply w-full flex flex-col justify-center items-center;
 }
 .block-section{
-    @apply w-full flex flex-col gap-4 justify-center items-center p-2;
+    @apply w-full flex flex-col gap-8 justify-center items-center p-2;
 }
 @screen xl{
     .block-section{
-        @apply w-11/12;
+        @apply w-11/12 p-8;
     }
 }

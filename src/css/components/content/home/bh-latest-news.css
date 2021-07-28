@@ -107,8 +107,8 @@
 
 @screen lg{
 .content {
-    @apply py-4;
-    width: 24%;
+    @apply py-1;
+    width: 32%;
 }
 .content-details {
     @apply opacity-0;

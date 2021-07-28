@@ -4,8 +4,14 @@
         @apply relative shadow-md mt-6 mx-4 pb-6;
         &__tags{
             @apply absolute px-2 py-4 z-50;
+                &--news{
+                    @apply relative p-0 flex justify-start w-full;
+                }
                 .tags{
                     @apply bg-nezegamer-gray-dark p-4 font-bold text-sm underline bg-opacity-90;
+                        &--news{
+                            @apply bg-nezegamer-red;
+                        }
                         &:hover{
                             @apply no-underline bg-opacity-100;
                         }
