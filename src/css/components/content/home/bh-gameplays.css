@@ -19,9 +19,12 @@
 		.widget_block{
 			.aside{
 				@apply grid-cols-2 grid gap-2;
+				iframe{
+				@apply max-w-none;
+				}
 			}
 			.destacado{
-				@apply min-w-0;
+				@apply min-w-0 max-w-none;
 			}
 		}
 	}
