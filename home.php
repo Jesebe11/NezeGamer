@@ -5,11 +5,7 @@
 	<main id="primary" class="main">
 
 		<?php
-
-
-			get_template_part( 'template-parts/content-home');
-
-
+			get_template_part( 'template-parts/content' , 'home');
 		?>
 
 	</main>
