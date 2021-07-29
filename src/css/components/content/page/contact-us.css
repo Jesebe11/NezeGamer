@@ -1,5 +1,8 @@
 .contact-us{
-    @apply flex flex-col gap-2 w-full justify-center items-center;
+    @apply flex flex-col gap-2 w-full justify-center items-center text-lg;
+        h2{
+            @apply text-4xl font-bold text-nezegamer-red w-full px-4;
+        }
 }
 .wp-block-media-text{
     @apply bg-nezegamer-gray text-lg text-nezegamer-gray-opacity w-11/12 p-4 shadow-2xl border-b-4 border-nezegamer-red;
