@@ -1,5 +1,5 @@
 .contact{
-    @apply flex flex-col p-4 w-full items-center justify-around bg-nezegamer-gray;
+    @apply flex flex-col p-4 w-full items-center justify-around bg-nezegamer-gray-medium;
         .wp-block-contact-form-7-contact-form-selector{
             @apply bg-nezegamer-gray-opacity p-4 rounded-md;
             .wpcf7{
