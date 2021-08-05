@@ -1,12 +1,28 @@
-.contact-us{
-    @apply flex flex-col gap-2 w-full justify-center items-center text-lg;
-        h2{
-            @apply text-4xl font-bold text-nezegamer-red w-full px-4;
+.contact{
+    @apply flex flex-col p-4 w-full items-center justify-around bg-nezegamer-gray;
+        .wp-block-contact-form-7-contact-form-selector{
+            @apply bg-nezegamer-gray-opacity p-4;
+            .wpcf7{
+                .wpcf7-form{
+                    @apply flex flex-col gap-2;
+                        .wpcf7-form-control-wrap{
+                            @apply w-11/12;
+                            input , textarea{
+                                @apply w-full p-4 bg-transparent border-b-2 border-nezegamer-red text-nezegamer-red text-lg outline-none;
+                            }
+                        }
+                        .wpcf7-submit{
+                            @apply border-2 rounded-md border-nezegamer-red w-2/3 p-4 text-nezegamer-red cursor-pointer bg-transparent;
+                                &:hover{
+                                    @apply bg-nezegamer-gray;
+                                }
+                        }
+                }
+            }
         }
 }
-.wp-block-media-text{
-    @apply bg-nezegamer-gray text-lg text-nezegamer-gray-opacity w-11/12 p-4 shadow-2xl border-b-4 border-nezegamer-red;
-}
-.wp-block-media-text:nth-child(odd){
-    @apply bg-nezegamer-gray-opacity text-nezegamer-white-single;
+@screen lg{
+    .contact{
+        @apply flex-row;
+    }
 }

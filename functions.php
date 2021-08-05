@@ -167,3 +167,8 @@ require get_template_directory() . '/inc/widgets.php';
  */
 
 require get_template_directory() . '/template-parts/widgets.php';
+/**
+ * Remover etiqueta p que anade contact form por defecto
+ */
+
+require get_template_directory() . '/inc/remove-tag-p.php';

@@ -10,6 +10,10 @@ body{
 .block-section{
     @apply w-full flex flex-col gap-8 justify-center items-center p-2;
 }
+
+.content-general{
+    @apply flex;
+}
 @screen xl{
     .block-section{
         @apply w-11/12 p-8;
