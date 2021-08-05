@@ -9,6 +9,7 @@
         .menu-item {
             @apply inline-block items-center p-2 border-none text-nezegamer-white-single bg-transparent font-bold text-lg;
             column-gap: .3rem;
+            z-index:100;
 
             a {
                 @apply inline-block relative text-lg pb-3;

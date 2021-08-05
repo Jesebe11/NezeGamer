@@ -25,7 +25,7 @@
 
 <div id="page" class="site">
 	<header id="masthead" class="header">
-			<?
+			<?php
 				get_template_part( 'template-parts/content' , 'header' );
 
 			?>

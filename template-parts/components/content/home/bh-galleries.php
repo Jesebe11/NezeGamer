@@ -23,7 +23,7 @@ $the_query = new WP_Query( $args);
                             <div class="content__info">
                                 <h2 class="content-title"><?= $title; ?></h2>
                                 <ul class="tags tags--gallery">
-                                    <?
+                                    <?php
                                         $posttags = get_the_tags($post->ID , ' , ');
                                         if ($posttags) {
                                             foreach($posttags as $tag) {

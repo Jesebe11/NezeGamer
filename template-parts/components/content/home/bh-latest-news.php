@@ -41,7 +41,7 @@ $the_query = new WP_Query( $args);
                         </div>
                         <div class="content-details fadeIn-bottom">
                             <div class="content-text">
-                            <?  echo '<p class="excerpt">' . get_the_excerpt() . '</p>'; ?>
+                            <?php  echo '<p class="excerpt">' . get_the_excerpt() . '</p>'; ?>
                             <a class="zoom-gallery" href="<?php the_permalink(); ?>">
                                     <img src="https://i.postimg.cc/5NCrq5nk/eye-1.png" alt="Eye">
                                 </a>

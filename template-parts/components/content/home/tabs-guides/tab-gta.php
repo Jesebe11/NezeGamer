@@ -26,7 +26,7 @@
                         <?= $date; ?>
                     </p>/
                     <ul class="item__meta__tags">
-                        <?
+                        <?php
                             $post_tags = get_the_tags();
                             if ( $post_tags ) {
                             echo $post_tags[0]->name;

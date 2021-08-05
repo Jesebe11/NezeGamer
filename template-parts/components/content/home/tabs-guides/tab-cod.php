@@ -7,7 +7,7 @@ $args = [
     'orderby' => 'date',
     'order' => 'DESC',
     'posts_per_page' => 6,
-    'category_name' => 'call-of-duty',
+    'category_name' => 'call-of-duty-guias',
 ];
 $the_query = new WP_Query( $args);
 
@@ -27,7 +27,7 @@ $the_query = new WP_Query( $args);
                         <?= $date; ?>
                     </p>/
                     <ul class="item__meta__tags">
-                        <?
+                        <?php
                             $post_tags = get_the_tags();
                             if ( $post_tags ) {
                             echo $post_tags[0]->name;

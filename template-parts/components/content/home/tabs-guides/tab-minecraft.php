@@ -3,7 +3,6 @@
         'post_type' => 'post',
         'post_status' => 'publish',
         'orderby' => 'date',
-        'order' => 'DESC',
         'posts_per_page' => 6,
         'category_name' => 'minecraft-guias',
     ];
@@ -22,9 +21,9 @@
                 <img src="https://i.postimg.cc/t4KSmPcp/guide.png" alt="Guia">
                     <p class="item__meta__tags">
                         <?= $date; ?>
-                    </p>/
+                    </p>
                     <ul class="item__meta__tags">
-                        <?
+                        <?php
                             $post_tags = get_the_tags();
                             if ( $post_tags ) {
                             echo $post_tags[0]->name;
