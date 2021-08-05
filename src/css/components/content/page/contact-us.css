@@ -1,14 +1,14 @@
 .contact{
     @apply flex flex-col p-4 w-full items-center justify-around bg-nezegamer-gray;
         .wp-block-contact-form-7-contact-form-selector{
-            @apply bg-nezegamer-gray-opacity p-4;
+            @apply bg-nezegamer-gray-opacity p-4 rounded-md;
             .wpcf7{
                 .wpcf7-form{
                     @apply flex flex-col gap-2;
                         .wpcf7-form-control-wrap{
                             @apply w-11/12;
                             input , textarea{
-                                @apply w-full p-4 bg-transparent border-b-2 border-nezegamer-red text-nezegamer-red text-lg outline-none;
+                                @apply w-full p-4 bg-transparent border-b-2 border-nezegamer-red text-nezegamer-white-single text-lg outline-none;
                             }
                         }
                         .wpcf7-submit{
