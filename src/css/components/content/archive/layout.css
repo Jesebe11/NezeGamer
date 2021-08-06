@@ -1,0 +1,11 @@
+.content-archive{
+    @apply w-full px-1;
+}
+@screen lg{
+    .content-archive{
+        @apply w-2/3 px-4;
+    }
+    .sidebar{
+        @apply w-1/3;
+    }
+}

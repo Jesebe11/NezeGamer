@@ -1,51 +1,33 @@
 <?php
-/**
- * The template for displaying archive pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package NezeGamer
- */
-
-get_header();
+	get_header();
 ?>
 
-	<main id="primary" class="site-main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-			<?php echo do_shortcode('[pci-cat-slider]'); ?>
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
+	<main id="primary" class="main">
+		<div class="block-section">
+			<?php get_template_part( 'template-parts/components/common/titles/titles' );?>
+			<div class="block-section__split">
+				<section class="content-archive">
+					<?php
+						if ( is_category( 'noticias' ) ) {
+							get_template_part( 'template-parts/content-archive', '  ',
+							['class' => 'archive-news' ] );
+						}elseif( is_category( 'juegos' ) ){
+							get_template_part( 'template-parts/content-archive', '  ',
+							['class' => 'archive-games' ] );
+						}else {
+							get_template_part( 'template-parts/content-archive' , '  ',
+							['class' => 'archive-general' ] );
+						}
+					?>
+				</section>
+				<aside class="sidebar">
+					<?php
+						get_template_part( 'template-parts/components/common/sidebar/sidebar');
+					?>
+				</aside>
+			</div>
+		</div>
+	</main>
 
 <?php
-get_sidebar();
-get_footer();
+	get_footer();

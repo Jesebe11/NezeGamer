@@ -9,6 +9,9 @@ body{
 }
 .block-section{
     @apply w-full flex flex-col gap-8 justify-center items-center p-2;
+        &__split{
+            @apply flex flex-col gap-2;
+        }
 }
 
 .content-general{
@@ -17,5 +20,8 @@ body{
 @screen xl{
     .block-section{
         @apply w-11/12 p-8;
+        &__split{
+            @apply flex-row;
+        }
     }
 }
