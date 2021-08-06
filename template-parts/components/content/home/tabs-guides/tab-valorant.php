@@ -7,7 +7,7 @@ $args = [
     'orderby' => 'date',
     'order' => 'DESC',
     'posts_per_page' => 6,
-    'category_name' => 'call-of-duty-guias',
+    'category_name' => 'valorant-guias',
 ];
 $the_query = new WP_Query( $args);
 

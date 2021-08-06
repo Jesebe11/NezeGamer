@@ -1,0 +1,9 @@
+.pciwgas-cat-wrap{
+    @apply grid grid-cols-5;
+        .pciwgas-pdt-cat-grid{
+            @apply w-auto;
+        }
+}
+.pciwgas-clearfix:before, .pciwgas-clearfix:after{
+    content: none !important;
+}

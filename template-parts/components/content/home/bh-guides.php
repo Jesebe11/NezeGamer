@@ -5,7 +5,7 @@
         <div class="tabs">
             <label class="tab" id="one-tab" for="one">Minecraft</label>
             <label class="tab" id="two-tab" for="two">GTA</label>
-            <label class="tab" id="three-tab" for="three">COD</label>
+            <label class="tab" id="three-tab" for="three">Valorant</label>
         </div>
     <div class="panels">
         <div class="panel" id="one-panel">
@@ -20,7 +20,7 @@
         </div>
         <div class="panel" id="three-panel">
             <div class="content">
-                <?php get_template_part('template-parts/components/content/home/tabs-guides/tab-cod'); ?>
+                <?php get_template_part('template-parts/components/content/home/tabs-guides/tab-valorant'); ?>
             </div>
         </div>
     </div>
