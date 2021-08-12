@@ -1,1 +1,3 @@
-hola
+<section class="error">
+        
+</section>

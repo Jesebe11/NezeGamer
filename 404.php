@@ -3,11 +3,9 @@
 ?>
 
 	<main id="primary" class="main">
-
-		<section class="error-404">
-				<?php get_template_part( 'template-parts/content' , '404' ); ?>
-		</section>
-
+			<?php
+				get_template_part( 'template-parts/content' , '404' );
+			?>
 	</main>
 
 <?php
