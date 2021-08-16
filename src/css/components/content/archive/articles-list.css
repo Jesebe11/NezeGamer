@@ -1,11 +1,23 @@
 .content-archive__list{
     .post{
-        @apply flex w-full flex-col;
+        @apply flex w-full flex-col border-b-2 border-nezegamer-gray-dark;
             .info{
                 @apply flex;
+                    .post-thumbnail{
+                        @apply w-1/2;
+                    }
+                    .entry-header{
+                        @apply flex flex-col gap-4 justify-center text-nezegamer-gray-dark font-bold px-2;
+                        &__title{
+                            @apply text-4xl ;
+                        }
+                    }
             }
             .excerpt{
-                @apply p-4
+                @apply p-4;
+                    .entry-footer{
+                        @apply text-nezegamer-gray-dark
+                    }
             }
     }
 }

@@ -1,5 +1,5 @@
 .content-archive__list{
-    @apply w-full px-1;
+    @apply w-full px-1 flex flex-col gap-8;
         &--news{
             @apply bg-nezegamer-red;
         }
