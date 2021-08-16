@@ -1,0 +1,11 @@
+.content-archive__list{
+    .post{
+        @apply flex w-full flex-col;
+            .info{
+                @apply flex;
+            }
+            .excerpt{
+                @apply p-4
+            }
+    }
+}

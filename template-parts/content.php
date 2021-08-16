@@ -10,43 +10,32 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="info">
+	<?php nezegamer_post_thumbnail(  ); ?>
 	<header class="entry-header">
-		<?php
+	<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+			else :
+				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			endif;
 
-		if ( 'post' === get_post_type() ) :
-			?>
+			if ( 'post' === get_post_type() ) :
+				?>
 			<div class="entry-meta">
 				<?php
 				nezegamer_posted_on();
 				nezegamer_posted_by();
 				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+			</div>
+			<?php endif; ?>
+		</header>
 
-	<?php nezegamer_post_thumbnail(); ?>
-
-	<div class="entry-content">
+	</div>
+<div class="excerpt">
+<div class="entry-content">
 		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'nezegamer' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+		the_excerpt(  );
 
 		wp_link_pages(
 			array(
@@ -55,9 +44,10 @@
 			)
 		);
 		?>
-	</div><!-- .entry-content -->
+	</div>
 
 	<footer class="entry-footer">
 		<?php nezegamer_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+	</footer>
+</div>
+</article>

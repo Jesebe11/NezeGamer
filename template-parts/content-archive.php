@@ -9,10 +9,6 @@
 
     endwhile;
 
-    the_posts_navigation();
-
-
-
     endif;
     ?>
 </section>
