@@ -11,4 +11,5 @@
 
     endif;
     ?>
+        <?php nezegamer_numeric_posts_nav(); ?>
 </section>

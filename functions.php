@@ -168,6 +168,16 @@ require get_template_directory() . '/inc/widgets.php';
 
 require get_template_directory() . '/template-parts/widgets.php';
 /**
+ * Register variety functions
+ */
+
+require get_template_directory() . '/inc/our-functions.php';
+/**
+ * Register variety functions
+ */
+
+require get_template_directory() . '/inc/pagination.php';
+/**
  * Remover etiqueta p que anade contact form por defecto
  */
 
