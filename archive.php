@@ -4,23 +4,18 @@
 
 	<main id="primary" class="main">
 		<div class="block-section">
-			<section class="slider-cat">
-				<?php
-					get_template_part( 'template-parts/components/content/archive/slider-cat');
-				?>
-			</section>
 			<?php get_template_part( 'template-parts/components/common/titles/titles' );?>
 			<div class="block-section__split">
 					<?php
 						if ( is_category( 'noticias' ) ) {
 							get_template_part( 'template-parts/content-archive', '  ',
-							['class' => 'content-archive__list content-archive__list--news' ] );
+							['class' => 'content-archive__list content-archive__list--red' ] );
 						}elseif( is_category( 'juegos' ) ){
 							get_template_part( 'template-parts/content-archive', '  ',
-							['class' => 'content-archive__list content-archive__list--games' ] );
+							['class' => 'content-archive__list content-archive__list--gray' ] );
 						}else {
 							get_template_part( 'template-parts/content-archive' , '  ',
-							['class' => 'content-archive__list content-archive__list--guides' ] );
+							['class' => 'content-archive__list content-archive__list--gray-strong' ] );
 						}
 					?>
 				<aside class="sidebar">

@@ -1,12 +1,12 @@
 .content-archive__list{
     @apply w-full px-1 flex flex-col gap-8;
-        &--news{
+        &--red{
             @apply bg-nezegamer-red;
         }
-        &--guides{
+        &--gray{
             @apply bg-nezegamer-gray;
         }
-        &--games{
+        &--gray-strong{
             @apply bg-nezegamer-gray-light;
         }
 }
