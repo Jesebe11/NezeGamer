@@ -58,7 +58,7 @@
 
 @screen lg {
     .dest {
-
+        @apply justify-center;
         &__card {
             @apply shadow-none mt-0;
             &__description {
@@ -74,7 +74,7 @@
             }
 
             &--screen-lg {
-                @apply col-start-1 col-end-3 w-2/3;
+                @apply col-start-1 col-end-3 w-1/2;
             }
 
             &__title {
