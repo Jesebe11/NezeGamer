@@ -52,9 +52,9 @@ function nezegamer_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'NezeGamer categorias noticias', 'nezegamer' ),
-			'id'            => 'sidebar-cats-news',
-			'description'   => esc_html__( 'Añade cats al bloque de categorias en la seccion de noticias', 'nezegamer' ),
+			'name'          => esc_html__( 'NezeGamer categorias parent I', 'nezegamer' ),
+			'id'            => 'sidebar-cats-parent-one',
+			'description'   => esc_html__( 'Añade cats al bloque de categorias en la seccion de parent I', 'nezegamer' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -63,9 +63,9 @@ function nezegamer_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'NezeGamer categorias juegos', 'nezegamer' ),
-			'id'            => 'sidebar-cats-games',
-			'description'   => esc_html__( 'Añade cats al bloque de categorias en la seccion de juegos', 'nezegamer' ),
+			'name'          => esc_html__( 'NezeGamer categorias parent II', 'nezegamer' ),
+			'id'            => 'sidebar-cats-parent-two',
+			'description'   => esc_html__( 'Añade cats al bloque de categorias en la seccion de parent II', 'nezegamer' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -74,9 +74,9 @@ function nezegamer_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'NezeGamer categorias guias', 'nezegamer' ),
-			'id'            => 'sidebar-cats-guides',
-			'description'   => esc_html__( 'Añade cats al bloque de categorias en la seccion de noticias', 'nezegamer' ),
+			'name'          => esc_html__( 'NezeGamer categorias parent III', 'nezegamer' ),
+			'id'            => 'sidebar-cats-parent-three',
+			'description'   => esc_html__( 'Añade cats al bloque de categorias en la seccion de parent III', 'nezegamer' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
