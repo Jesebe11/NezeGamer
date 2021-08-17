@@ -4,6 +4,11 @@
 
 	<main id="primary" class="main">
 		<div class="block-section">
+			<section class="slider-cat">
+				<?php
+					get_template_part( 'template-parts/components/content/archive/slider-cat');
+				?>
+			</section>
 			<?php get_template_part( 'template-parts/components/common/titles/titles' );?>
 			<div class="block-section__split">
 					<?php
