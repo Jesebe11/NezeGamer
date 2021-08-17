@@ -19,7 +19,7 @@ body{
 }
 @screen xl{
     .block-section{
-        @apply w-11/12 p-8;
+        @apply w-3/4 p-8;
         &__split{
             @apply flex-row;
         }

@@ -1,9 +1,25 @@
-.pciwgas-cat-wrap{
-    @apply grid grid-cols-5;
-        .pciwgas-pdt-cat-grid{
-            @apply w-auto;
-        }
-}
-.pciwgas-clearfix:before, .pciwgas-clearfix:after{
-    content: none !important;
+.slider-cat{
+    @apply flex justify-center items-center w-full bg-nezegamer-gray-opacity p-4;
+    .pciwgas-cat-wrap{
+        @apply flex flex-wrap gap-4 font-bold;
+            .pciwgas-pdt-cat-grid{
+                @apply opacity-70 w-auto border-b-4 border-nezegamer-red bg-nezegamer-gray-dark shadow-2xl transform transition duration-300;
+                    &:hover{
+                        @apply rotate-12 shadow-none opacity-100;
+                    }
+            }
+            .pciwgas-title a{
+                color: #6c757d !important;
+            }
+            .pciwgas-title{
+                padding: 0px !important;
+                padding-bottom: 5px !important;
+            }
+            .pciwgas-post-cat-inner{
+                margin-bottom: 0px !important;
+            }
+    }
+    .pciwgas-clearfix:before, .pciwgas-clearfix:after{
+        content: none !important;
+    }
 }
