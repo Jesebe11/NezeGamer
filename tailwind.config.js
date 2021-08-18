@@ -10,7 +10,7 @@ module.exports = {
           //layout
           'nezegamer-red' : '#df163b',
           'nezegamer-white-single' : '#fff' ,
-          'nezegamer-white-comple' : '#f8f9fa',
+          'nezegamer-white-comple' : '#b0b0b0',
           'nezegamer-gray' : '#6c757d' ,
           'nezegamer-gray-opacity' : '#12151a' ,
           'nezegamer-gray-light' : '#292e38' ,

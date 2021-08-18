@@ -1,14 +1,17 @@
 .content-archive__list{
     .post{
-        @apply flex w-full flex-col border-b-2 border-nezegamer-gray-dark;
+        @apply flex w-full flex-row border-b-2 border-nezegamer-gray-dark p-4;
+        .post-thumbnail{
+            @apply w-1/3;
+        }
             .info{
-                @apply flex;
-                    .post-thumbnail{
-                        @apply w-1/2;
-                    }
+                @apply flex flex-col gap-2 w-2/3;
             }
             .excerpt{
                 @apply p-4;
             }
+    }
+    .post:nth-child(2n){
+        @apply bg-nezegamer-red bg-opacity-40;
     }
 }

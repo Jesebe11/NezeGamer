@@ -1,9 +1,27 @@
 .entry-header{
-    @apply flex flex-col gap-4 justify-center text-nezegamer-gray-medium font-bold px-2;
+    @apply flex flex-col gap-4 justify-around text-nezegamer-white-comple font-bold px-2;
     &__meta{
-        @apply w-full flex flex-col text-sm;
+        @apply w-full inline-flex gap-4 text-base justify-end items-center opacity-75 text-nezegamer-white-comple font-bold;
+            &:hover{
+                @apply text-opacity-100;
+            }
+        li{
+            @apply flex items-center gap-2 transition duration-500;
+                &:hover{
+                    @apply text-nezegamer-red;
+                }
+        }
+        &__date::before{
+            content: url(https://i.postimg.cc/0Nt3WdyV/calendar.png);
+        }
+        &__author::before{
+            content: url(https://i.postimg.cc/Njh2V7vs/edit.png);
+        }
     }
     &__title{
-        @apply text-4xl;
+        @apply text-2xl transition duration-500;
+            &:hover{
+                @apply text-nezegamer-red;
+            }
     }
 }

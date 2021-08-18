@@ -10,8 +10,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<?php nezegamer_post_thumbnail(  ); ?>
 <div class="info">
-	<?php nezegamer_post_thumbnail(  ); ?>
 	<header class="entry-header">
 		<?php
 			if ( 'post' === get_post_type() ) :
@@ -31,10 +31,7 @@
 			endif;
 		?>
 	</header>
-
-	</div>
-<div class="excerpt">
-<div class="entry-content">
+	<div class="entry-content">
 		<?php
 		the_excerpt(  );
 
@@ -50,5 +47,6 @@
 	<footer class="entry-footer">
 		<?php nezegamer_entry_footer(); ?>
 	</footer>
-</div>
+	</div>
+
 </article>
