@@ -13,23 +13,25 @@
 <div class="info">
 	<?php nezegamer_post_thumbnail(  ); ?>
 	<header class="entry-header">
-	<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-header__title">', '</h1>' );
-			else :
-				the_title( '<h2 class="entry-header__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			endif;
-
+		<?php
 			if ( 'post' === get_post_type() ) :
-				?>
+		?>
 			<div class="entry-header__meta">
 				<?php
 				nezegamer_posted_on();
 				nezegamer_posted_by();
 				?>
 			</div>
-			<?php endif; ?>
-		</header>
+		<?php endif; ?>
+
+		<?php
+			if ( is_singular() ) :
+				the_title( '<h1 class="entry-header__title">', '</h1>' );
+				else :
+					the_title( '<h2 class="entry-header__title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			endif;
+		?>
+	</header>
 
 	</div>
 <div class="excerpt">

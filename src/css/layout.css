@@ -17,7 +17,7 @@ body{
 .content-general{
     @apply flex;
 }
-@screen xl{
+@screen lg{
     .block-section{
         @apply w-11/12 p-8;
         &__split{

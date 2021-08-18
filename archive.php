@@ -14,10 +14,10 @@
 					<?php
 						if ( is_category( 'noticias' ) ) {
 							get_template_part( 'template-parts/content-archive', '  ',
-							['class' => 'content-archive__list content-archive__list--red' ] );
+							['class' => 'content-archive__list content-archive__list--gray' ] );
 						}elseif( is_category( 'juegos' ) ){
 							get_template_part( 'template-parts/content-archive', '  ',
-							['class' => 'content-archive__list content-archive__list--gray' ] );
+							['class' => 'content-archive__list content-archive__list--gray-light' ] );
 						}else {
 							get_template_part( 'template-parts/content-archive' , '  ',
 							['class' => 'content-archive__list content-archive__list--gray-strong' ] );
