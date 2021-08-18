@@ -16,12 +16,11 @@
 		<?php
 			if ( 'post' === get_post_type() ) :
 		?>
-			<div class="entry-header__meta">
-				<?php
-				nezegamer_posted_on();
-				nezegamer_posted_by();
-				?>
-			</div>
+				<ul class="entry-header__meta">
+					<li class="entry-header__meta__date"><?php nezegamer_posted_on(); ?></li>
+					<li class="entry-header__meta__author"><?php nezegamer_posted_by(); ?></li>
+				</ul>
+
 		<?php endif; ?>
 
 		<?php

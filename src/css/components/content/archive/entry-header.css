@@ -1,0 +1,9 @@
+.entry-header{
+    @apply flex flex-col gap-4 justify-center text-nezegamer-gray-medium font-bold px-2;
+    &__meta{
+        @apply w-full flex flex-col text-sm;
+    }
+    &__title{
+        @apply text-4xl;
+    }
+}

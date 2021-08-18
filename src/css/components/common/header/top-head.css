@@ -1,5 +1,5 @@
 .top-head{
-    @apply px-8 max-w-full flex flex-col justify-start gap-8 py-1 items-center border-b-4 border-nezegamer-red bg-nezegamer-gray-medium;
+    @apply px-8 justify-end flex flex-col gap-8 py-1 items-center border-b-4 border-nezegamer-red bg-nezegamer-gray-medium;
 }
 @screen lg{
     .top-head{
