@@ -50,7 +50,7 @@ if ( ! function_exists( 'nezegamer_entry_footer' ) ) :
 		if ( 'post' === get_post_type() ) {
 			$categories_list = get_the_category_list( esc_html__( ', ', 'nezegamer' ) );
 			if ( $categories_list ) {
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'nezegamer' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf( '<span class="cat-links">' . esc_html__( ' %1$s', 'nezegamer' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 
 			/* translators: used between list items, there is a space after the comma */
@@ -66,7 +66,7 @@ if ( ! function_exists( 'nezegamer_entry_footer' ) ) :
 			comments_popup_link(
 				sprintf(
 					wp_kses(
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'nezegamer' ),
+						__( 'Comentarios <span class="screen-reader-text"> on %s</span>', 'nezegamer' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -82,7 +82,7 @@ if ( ! function_exists( 'nezegamer_entry_footer' ) ) :
 		edit_post_link(
 			sprintf(
 				wp_kses(
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'nezegamer' ),
+					__( 'Editar <span class="screen-reader-text">%s</span>', 'nezegamer' ),
 					array(
 						'span' => array(
 							'class' => array(),

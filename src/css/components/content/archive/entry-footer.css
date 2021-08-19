@@ -1,3 +1,18 @@
 .entry-footer{
-    @apply flex w-full justify-end items-end;
+    @apply flex w-full justify-end items-end gap-4;
+        .cat-links:before{
+            content: url('https://i.postimg.cc/B6Z2WZYj/price-tag.png');
+        }
+        .comments-link:before{
+            content: url('https://i.postimg.cc/g0H3BLD9/chat.png');
+        }
+        .edit-link:before{
+            content: url('https://i.postimg.cc/k4dTXXLZ/pencil-1.png');
+        }
+        .edit-link, .comments-link, .cat-links{
+            @apply flex gap-2 justify-center items-center opacity-60 transition duration-500;
+                &:hover{
+                    @apply opacity-100;
+                }
+        }
 }
