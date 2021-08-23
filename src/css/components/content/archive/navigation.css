@@ -1,0 +1,12 @@
+.navigation{
+    @apply flex justify-center items-center p-4;
+    ul{
+        @apply inline-flex gap-4;
+            li{
+                @apply p-4 bg-nezegamer-red rounded-md transition duration-500 font-bold;
+                    &:hover{
+                        @apply bg-nezegamer-white-comple text-nezegamer-red;
+                    }
+            }
+    }
+}
