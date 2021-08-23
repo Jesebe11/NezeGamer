@@ -1,3 +1,5 @@
+@import './components/widgets/general.css';
 @import './components/widgets/social.css';
 @import './components/widgets/search.css';
 @import './components/widgets/details.css';
+@import './components/widgets/cat.css';

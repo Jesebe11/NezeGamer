@@ -1,0 +1,16 @@
+.widget_categories{
+    .wp-block-categories-list{
+        @apply text-lg;
+            .cat-item{
+                @apply text-nezegamer-red text-xl;
+                .children{
+                    .cat-item{
+                        @apply px-4 italic text-base text-nezegamer-white-comple;
+                    }
+                        .cat-item::before{
+                            content: "-";
+                        }
+                }
+            }
+    }
+}
