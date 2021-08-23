@@ -94,6 +94,28 @@ function nezegamer_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'NezeGamer archive page', 'nezegamer' ),
+			'id'            => 'sidebar-archive',
+			'description'   => esc_html__( 'Añade widgets en la archive page', 'nezegamer' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'NezeGamer single page', 'nezegamer' ),
+			'id'            => 'sidebar-single',
+			'description'   => esc_html__( 'Añade widgets en la single page', 'nezegamer' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'nezegamer_widgets_init' );
 ?>

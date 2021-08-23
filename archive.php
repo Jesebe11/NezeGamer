@@ -25,7 +25,7 @@
 					?>
 				<aside class="sidebar">
 					<?php
-						get_template_part( 'template-parts/components/common/sidebar/sidebar');
+						get_template_part( 'template-parts/components/common/sidebar/sidebar-archive');
 					?>
 				</aside>
 			</div>
