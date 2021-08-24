@@ -15,6 +15,11 @@
         @apply w-9/12;
     }
     .sidebar{
-        @apply w-3/12;
+        @apply w-3/12 sticky;
+        top:2rem;
+        height:max-content;
+            &__content{
+                @apply flex flex-col gap-4;
+            }
     }
 }
