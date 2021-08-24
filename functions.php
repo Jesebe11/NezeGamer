@@ -129,7 +129,7 @@ add_action( 'after_setup_theme', 'nezegamer_content_width', 0 );
 function nezegamer_scripts() {
 	wp_enqueue_style( 'nezegamer-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0' );
 	wp_style_add_data( 'nezegamer-style', 'rtl', 'replace' );
-	wp_enqueue_script( 'nezegamer-navigation', get_template_directory_uri() . '/src/js/hamburger.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'nezegamer-text', get_template_directory_uri() . '/src/js/test.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

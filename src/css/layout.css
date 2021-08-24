@@ -19,9 +19,14 @@ body{
 }
 @screen lg{
     .block-section{
-        @apply w-11/12 p-8;
+        @apply w-full p-10;
         &__split{
             @apply flex-row;
         }
+    }
+}
+@screen 2xl{
+    .block-section{
+        @apply w-3/4;
     }
 }

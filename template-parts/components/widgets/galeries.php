@@ -34,12 +34,12 @@ class Recent_galeries extends WP_Widget {
                 $the_query->the_post();
 
             ?>
-            <div>
-                <a href="<?php the_permalink(  ); ?>">
+
+            <a class="title" href="<?php the_permalink(  ); ?>">
                 <?php the_title(  ); ?>
             </a>
                 <?php the_content(  ); ?>
-            </div>
+
 
             <?php endwhile;
             wp_reset_postdata();

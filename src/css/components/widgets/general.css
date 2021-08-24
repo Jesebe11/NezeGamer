@@ -1,3 +1,24 @@
-.widget_categories{
-    @apply bg-nezegamer-gray-opacity p-4 border-b-2 border-nezegamer-red;
+.widget_categories, .widget_recent_galeries{
+    @apply flex flex-col gap-4 bg-nezegamer-gray-opacity p-4 border-b-2 border-nezegamer-red text-nezegamer-red font-bold;
+    .title{
+        @apply bg-nezegamer-red p-4 text-nezegamer-white-single text-xl transition duration-300;
+            &:hover{
+                @apply bg-transparent;
+            }
+    }
+    .wp-block-gallery{
+        .blocks-gallery-grid{
+            .blocks-gallery-item{
+                @apply opacity-80 italic text-xl;
+                    &:hover{
+                        @apply opacity-100;
+                    }
+                figure{
+                    .blocks-gallery-item__caption{
+                        @apply break-all overflow-hidden;
+                    }
+                }
+            }
+        }
+    }
 }

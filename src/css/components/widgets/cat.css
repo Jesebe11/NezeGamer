@@ -10,10 +10,16 @@
                                 @apply underline;
                             }
                     }
-                        .cat-item::before{
-                            content: "-";
-                        }
                 }
             }
+        .current-cat{
+            @apply bg-nezegamer-gray-medium;
+        }
+        .current-cat::before{
+            @apply flex justify-end w-full italic;
+            content: "Estás navegando aquí";
+            color: #fff !important;
+            font-size: small;
+        }
     }
 }
