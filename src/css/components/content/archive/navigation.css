@@ -1,7 +1,7 @@
 .navigation{
     @apply flex justify-center items-center p-4;
     ul{
-        @apply inline-flex gap-4;
+        @apply flex flex-wrap gap-4;
             li{
                 @apply p-4 bg-nezegamer-red rounded-md transition duration-500 font-bold;
                     &:hover{

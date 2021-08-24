@@ -5,7 +5,10 @@
                 @apply text-nezegamer-red text-xl;
                 .children{
                     .cat-item{
-                        @apply px-4 italic text-base text-nezegamer-white-comple;
+                        @apply px-4 italic text-base text-nezegamer-white-comple no-underline;
+                            &:hover{
+                                @apply underline;
+                            }
                     }
                         .cat-item::before{
                             content: "-";
