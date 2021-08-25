@@ -3,7 +3,7 @@
     .pciwgas-cat-wrap{
         @apply flex flex-wrap gap-4 font-bold;
             .pciwgas-pdt-cat-grid{
-                @apply opacity-70 w-auto border-b-4 border-nezegamer-red bg-nezegamer-gray-dark shadow-2xl transform transition duration-300;
+                @apply opacity-70 break-all w-1/4 border-b-4 border-nezegamer-red bg-nezegamer-gray-dark shadow-2xl transform transition duration-300;
                     &:hover{
                         @apply rotate-12 shadow-none opacity-100;
                     }
@@ -21,5 +21,14 @@
     }
     .pciwgas-clearfix:before, .pciwgas-clearfix:after{
         content: none !important;
+    }
+}
+@screen lg{
+    .slider-cat{
+        .pciwgas-cat-wrap{
+            .pciwgas-pdt-cat-grid{
+                @apply w-auto;
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 .navs-footer{
     .widget_block{
+        @apply w-full justify-center items-center flex;
         .pciwgas-post-cat-inner{
             @apply bg-nezegamer-gray-opacity rounded-lg flex flex-col items-center border-4 border-nezegamer-red border-opacity-100;
             width: 100px;
@@ -18,15 +19,23 @@
                 }
         }
         .pciwgas-cat-wrap{
-            @apply py-4 inline-flex flex-col;
+            @apply py-4 grid grid-cols-2 w-11/12;
+            .pciwgas-pdt-cat-grid{
+                width:20% !important;
+            }
         }
     }
 }
+
 @screen lg{
     .navs-footer{
         .widget_block{
+            @apply w-auto;
             .pciwgas-cat-wrap{
                 @apply py-4 block;
+                .pciwgas-pdt-cat-grid{
+                    @apply w-auto;
+                }
             }
         }
     }
