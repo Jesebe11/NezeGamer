@@ -19,7 +19,7 @@
         }
     }
     &__title{
-        @apply text-2xl transition duration-500;
+        @apply text-xl transition duration-500;
             &:hover{
                 @apply text-nezegamer-red;
             }

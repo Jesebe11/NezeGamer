@@ -13,11 +13,11 @@
                 }
             }
         .current-cat{
-            @apply bg-nezegamer-gray-medium;
+            @apply bg-nezegamer-gray-dark flex flex-col items-center py-4;
         }
         .current-cat::before{
-            @apply flex justify-end w-full italic;
-            content: "Estás navegando aquí";
+            @apply flex justify-end w-full italic px-2;
+            content: "(Estás navegando aquí)";
             color: #fff !important;
             font-size: small;
         }
