@@ -30,7 +30,7 @@
 @screen lg{
     .navs-footer{
         .widget_block{
-            @apply w-auto;
+            @apply w-1/2;
             .pciwgas-cat-wrap{
                 @apply py-4 block;
                 .pciwgas-pdt-cat-grid{
