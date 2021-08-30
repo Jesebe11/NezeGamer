@@ -9,30 +9,21 @@
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main">
-noticia
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation(
-				array(
-					'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'nezegamer' ) . '</span> <span class="nav-title">%title</span>',
-					'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'nezegamer' ) . '</span> <span class="nav-title">%title</span>',
-				)
-			);
-
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile;
-		?>
-
+	<main id="primary" class="main">
+	<div class="block-section">
+		<section class="block-section__split">
+			<article class="article">
+				<?php
+					get_template_part( 'template-parts/content', 'single' );
+				?>
+			</article>
+			<aside class="sidebar">
+					<?php
+						get_template_part( 'template-parts/components/common/sidebar/sidebar-archive');
+					?>
+			</aside>
+		</section>
+	</div>
 	</main>
-
 <?php
 get_footer();

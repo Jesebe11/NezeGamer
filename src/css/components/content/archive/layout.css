@@ -1,4 +1,4 @@
-.content-archive__list{
+.content-archive__list , .article{
     @apply w-full px-1 flex flex-col;
         &--gray{
             @apply bg-nezegamer-gray-light;
@@ -11,7 +11,7 @@
         }
 }
 @screen lg{
-    .content-archive__list{
+    .content-archive__list, .article{
         @apply w-2/3;
     }
     .sidebar{
